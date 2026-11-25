@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Storyboard & Production Plan - Linear Algebra (M3)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    line-height: 1.5;
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+  .header-card {
+    border: 1.5px solid #0284c7;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+  .header-card h1 {
+    margin: 0 0 6px 0;
+    color: #0369a1;
+    font-size: 18pt;
+  }
+  .header-card h2 {
+    margin: 0 0 10px 0;
+    color: #0f172a;
+    font-size: 13pt;
+    font-weight: 600;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 16px;
+    font-size: 9.5pt;
+    color: #334155;
+    border-top: 1px solid #bae6fd;
+    padding-top: 10px;
+  }
+  .meta-item strong {
+    color: #0369a1;
+  }
+  .objective-box {
+    background-color: #f8fafc;
+    border-left: 4px solid #0ea5e9;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    border-radius: 0 6px 6px 0;
+    font-size: 10pt;
+  }
+  .objective-box strong {
+    color: #0284c7;
+  }
+  table.master-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    font-size: 9pt;
+  }
+  table.master-table th {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 600;
+  }
+  table.master-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+  }
+  table.master-table tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 8pt;
+    font-weight: 700;
+  }
+  .badge-cyan { background-color: #e0f2fe; color: #0369a1; }
+  .badge-amber { background-color: #fef3c7; color: #b45309; }
+  .badge-green { background-color: #dcfce7; color: #15803d; }
+  .badge-coral { background-color: #fee2e2; color: #b91c1c; }
+  
+  .scene-card {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    page-break-inside: avoid;
+    background: #ffffff;
+  }
+  .scene-header {
+    background-color: #f1f5f9;
+    border-bottom: 1px solid #cbd5e1;
+    padding: 8px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .scene-title {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 11pt;
+  }
+  .scene-duration {
+    font-size: 9pt;
+    color: #64748b;
+    font-weight: 600;
+  }
+  .scene-body {
+    padding: 12px 14px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 14px;
+    font-size: 9pt;
+  }
+  .scene-col h4 {
+    margin: 0 0 6px 0;
+    color: #0284c7;
+    font-size: 9.5pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 3px;
+  }
+  .script-text {
+    font-style: italic;
+    color: #334155;
+    background-color: #f8fafc;
+    border-left: 3px solid #cbd5e1;
+    padding: 6px 8px;
+    border-radius: 0 4px 4px 0;
+    margin-top: 4px;
+  }
+  .formula-box {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #0f172a;
+    color: #38bdf8;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 8.5pt;
+    margin: 6px 0;
+  }
+  .footer-stamp {
+    text-align: center;
+    font-size: 8.5pt;
+    color: #94a3b8;
+    margin-top: 30px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-card">
+  <h1>LINEAR ALGEBRA AND CALCULUS (M3)</h1>
+  <h2>Internal Assessment Project Option 1: Animation Video Storyboard</h2>
+  <div class="meta-grid">
+    <div class="meta-item"><strong>Topic:</strong> Matrices & Matrix Operations: Geometry & Algebra</div>
+    <div class="meta-item"><strong>Student Name:</strong> Ipsit Debnath</div>
+    <div class="meta-item"><strong>Student ID:</strong> E25B071258</div>
+    <div class="meta-item"><strong>Branch / Program:</strong> BTech Computer Science (AI & ML)</div>
+    <div class="meta-item"><strong>Target Duration:</strong> 5 Minutes (Strictly 7 min max)</div>
+    <div class="meta-item"><strong>Output Format:</strong> 1080p Full HD (1920×1080), 16:9 MP4</div>
+    <div class="meta-item"><strong>Code Deliverable:</strong> Manim Scripts + Standalone Python Engine</div>
+  </div>
+</div>
+
+<div class="objective-box">
+  <strong>One-Sentence Learning Objective:</strong><br>
+  <em>"By the end of this video, the viewer will be able to interpret any matrix both as an organized multi-dimensional data structure and as a geometric linear transformation of space, and confidently calculate and visualize matrix addition, scalar multiplication, and matrix multiplication."</em>
+</div>
+
+<h3 style="color:#0f172a; margin-bottom:8px;">6-Scene Storyboard Master Overview</h3>
+<table class="master-table">
+  <thead>
+    <tr>
+      <th style="width:10%;">Scene #</th>
+      <th style="width:24%;">Purpose & Name</th>
+      <th style="width:12%;">Duration</th>
+      <th style="width:30%;">Visual Plan</th>
+      <th style="width:24%;">Key Mathematics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Scene 1</strong></td>
+      <td><strong>Hook & Context</strong><br><span class="badge badge-cyan">Motivation</span></td>
+      <td>00:00 - 00:40 (39.5s)</td>
+      <td>Digital photo zooming into pixel intensity matrix; 3D wireframe rotating cube in coordinate space.</td>
+      <td>Image pixel matrix; Transformation law: $\mathbf{x}' = A\mathbf{x}$.</td>
+    </tr>
+    <tr>
+      <td><strong>Scene 2</strong></td>
+      <td><strong>Concept Introduction</strong><br><span class="badge badge-amber">Foundations</span></td>
+      <td>00:40 - 01:24 (43.9s)</td>
+      <td>$3 \times 2$ Matrix anatomy; row highlight in amber ($m=3$), column in cyan ($n=2$), entry $a_{21}$ reticle callout.</td>
+      <td>$A \in \mathbb{R}^{m \times n}$, row index $i$, column index $j$, column vectors $\mathbf{v} \in \mathbb{R}^{n \times 1}$.</td>
+    </tr>
+    <tr>
+      <td><strong>Scene 3</strong></td>
+      <td><strong>Visual Intuition</strong><br><span class="badge badge-cyan">Geometry</span></td>
+      <td>01:24 - 02:20 (56.2s)</td>
+      <td>Cartesian coordinate grid; unit vectors $\hat{i}$ (cyan) & $\hat{j}$ (amber); smooth continuous space transformation to matrix $M$.</td>
+      <td>$T(\mathbf{v}) = A\mathbf{v}$; Column 1 is $T(\hat{i})$, Column 2 is $T(\hat{j})$. Linearity: parallel lines & fixed origin.</td>
+    </tr>
+    <tr>
+      <td><strong>Scene 4</strong></td>
+      <td><strong>Worked Example</strong><br><span class="badge badge-green">Operations</span></td>
+      <td>02:20 - 03:41 (80.9s)</td>
+      <td>Step-by-step arithmetic cards for: 1. Addition ($A+B$), 2. Scalar Mult ($3A$), 3. Matrix Mult ($AB$) with dot products.</td>
+      <td>$(A+B)_{ij} = a_{ij} + b_{ij}$, $(kA)_{ij} = k a_{ij}$, $C_{ij} = \sum_{r=1}^k a_{ir} b_{rj}$. Complete calculations shown.</td>
+    </tr>
+    <tr>
+      <td><strong>Scene 5</strong></td>
+      <td><strong>Interpretation</strong><br><span class="badge badge-coral">Composition</span></td>
+      <td>03:41 - 04:28 (47.1s)</td>
+      <td>Side-by-side comparison of $AB$ vs $BA$; geometric shear vs rotation demo; determinant area scaling.</td>
+      <td>Function composition $T_{BA}(\mathbf{x}) = B(A(\mathbf{x}))$; Non-commutativity $AB \neq BA$; Determinant $|\det(M)|$.</td>
+    </tr>
+    <tr>
+      <td><strong>Scene 6</strong></td>
+      <td><strong>Summary & Credits</strong><br><span class="badge badge-green">Reinforcement</span></td>
+      <td>04:28 - 05:15 (43.4s)</td>
+      <td>3 Core Takeaway Cards cascading into view; final credentials frame with references and AI disclosure.</td>
+      <td>Dual nature, strict dimension constraints, order-dependence of composition.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="color:#0f172a; margin-bottom:8px;">Detailed Scene-by-Scene Production Script</h3>
+
+<!-- Scene 1 -->
+<div class="scene-card">
+  <div class="scene-header">
+    <span class="scene-title">Scene 1: Hook / Context — The Hidden Geometry of Our World</span>
+    <span class="scene-duration">Duration: 00:00 - 00:40 (39.5s)</span>
+  </div>
+  <div class="scene-body">
+    <div class="scene-col">
+      <h4>Visual & Motion Graphics Plan</h4>
+      <ul>
+        <li><strong>00:00 - 00:08:</strong> Title Frame with glowing cyan typography, student details, course metadata, and duration badge.</li>
+        <li><strong>00:08 - 00:24:</strong> Real-world scenario A: A high-res photo zooms into individual pixel intensity values ($255, 128, 45, \dots$), revealing that an image is simply an $m \times n$ matrix in computer RAM.</li>
+        <li><strong>00:24 - 00:40:</strong> Real-world scenario B: A rotating 3D wireframe cube displays the master graphics transformation equation $\mathbf{x}' = A\mathbf{x}$.</li>
+      </ul>
+      <div class="formula-box">
+        x' = A · x  (Transformation Law)
+      </div>
+    </div>
+    <div class="scene-col">
+      <h4>Narration Script (Word-for-Word)</h4>
+      <div class="script-text">
+        "Have you ever wondered how your phone rotates a photo in a split second, how computer graphics render lifelike three-dimensional worlds in video games, or how artificial intelligence models process millions of visual signals simultaneously? Behind every single one of these technological wonders lies a universal mathematical language: the matrix. To many students, a matrix looks like nothing more than an intimidating box of numbers trapped inside square brackets. In this video, we are going to look beneath the surface. We will discover what a matrix truly represents, how its operations work, and how simple numbers in a grid actually control the geometry of space itself."
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scene 2 -->
+<div class="scene-card">
+  <div class="scene-header">
+    <span class="scene-title">Scene 2: Concept Introduction — Anatomy of a Matrix & Notation</span>
+    <span class="scene-duration">Duration: 00:40 - 01:24 (43.9s)</span>
+  </div>
+  <div class="scene-body">
+    <div class="scene-col">
+      <h4>Visual & Motion Graphics Plan</h4>
+      <ul>
+        <li>Display matrix $A \in \mathbb{R}^{3 \times 2}$ with stylish bracket geometry.</li>
+        <li>Amber highlight bar sweeps horizontally across Row 1, Row 2, Row 3 ($m=3$).</li>
+        <li>Cyan highlight bar sweeps vertically down Column 1 and Column 2 ($n=2$).</li>
+        <li>Reticle callout zooms into entry $a_{21}$ (Row 2, Column 1), explaining index roles $i$ and $j$.</li>
+        <li>Column vector callout: $\mathbf{v} \in \mathbb{R}^{n \times 1}$ is a single-column matrix.</li>
+      </ul>
+      <div class="formula-box">
+        A = [ [a11, a12], [a21, a22], [a31, a32] ] ∈ R^{3x2}
+      </div>
+    </div>
+    <div class="scene-col">
+      <h4>Narration Script (Word-for-Word)</h4>
+      <div class="script-text">
+        "Let us begin with the formal definition. Mathematically, a matrix is a rectangular array of numbers arranged in horizontal rows and vertical columns. We describe any matrix by its dimensions: m by n, where m is the number of rows, and n is the number of columns. An easy memory trick is the phrase Row-Column, just like Roman Colonists, or R and C in alphabetical order. Any individual number inside the matrix is called an entry, denoted as a i j, where index i specifies its row, and index j specifies its column. For example, a two one lives in row two, column one. When a matrix has only one column, we call it a column vector. Thus, vectors are simply specialized single-column matrices!"
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scene 3 -->
+<div class="scene-card">
+  <div class="scene-header">
+    <span class="scene-title">Scene 3: Visual Intuition — Matrices as Space Transformers</span>
+    <span class="scene-duration">Duration: 01:24 - 02:20 (56.2s)</span>
+  </div>
+  <div class="scene-body">
+    <div class="scene-col">
+      <h4>Visual & Motion Graphics Plan</h4>
+      <ul>
+        <li>2D Cartesian coordinate plane with visible grid lines, origin $(0,0)$, and unit basis vectors:
+          <ul>
+            <li>$\hat{i} = [1, 0]^T$ (Electric Cyan along x-axis)</li>
+            <li>$\hat{j} = [0, 1]^T$ (Radiant Amber along y-axis)</li>
+          </ul>
+        </li>
+        <li>Transformation Matrix $M = [[2, 1], [0, 1.5]]$ appears in info card.</li>
+        <li>Space smoothly warps over time: grid lines remain parallel and evenly spaced; origin remains fixed.</li>
+        <li>Vector $\hat{i}$ lands at $[2, 0]^T$ (Column 1); vector $\hat{j}$ lands at $[1, 1.5]^T$ (Column 2).</li>
+      </ul>
+      <div class="formula-box">
+        M = [ [2, 1], [0, 1.5] ];  T(i-hat) = [2, 0]^T,  T(j-hat) = [1, 1.5]^T
+      </div>
+    </div>
+    <div class="scene-col">
+      <h4>Narration Script (Word-for-Word)</h4>
+      <div class="script-text">
+        "Now comes the profound visual insight that transforms how you see linear algebra forever: a matrix is not just a passive table of stored numbers; it is an active geometric function that transforms space! In two dimensions, every coordinate is tracked by two unit basis vectors: i hat, pointing to one zero along the horizontal axis, and j hat, pointing to zero one along the vertical axis. When space undergoes a linear transformation, two fundamental rules hold: all grid lines remain straight and parallel, and the origin remains fixed at zero zero. Because linear combinations are preserved, wherever the basis vectors land completely determines where every point in space lands! Look closely at the columns of our matrix: the first column, two zero, is where i hat lands. The second column, one, one point five, is where j hat lands. A matrix is literally a compact recording of where the basis vectors landed!"
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scene 4 -->
+<div class="scene-card">
+  <div class="scene-header">
+    <span class="scene-title">Scene 4: Worked Example — Step-by-Step Operations</span>
+    <span class="scene-duration">Duration: 02:20 - 03:41 (80.9s)</span>
+  </div>
+  <div class="scene-body">
+    <div class="scene-col">
+      <h4>Visual & Motion Graphics Plan</h4>
+      <ul>
+        <li><strong>Part A: Addition (02:20 - 02:46):</strong> Dimension match check ($2 \times 2$); component-wise additions with synchronized glowing boxes: $3+1=4$, $1+2=3$, $0+4=4$, $2+5=7$. Result: $[[4, 3], [4, 7]]$.</li>
+        <li><strong>Part B: Scalar Multiplication (02:46 - 03:06):</strong> Scalar $k=3$ multiplies each entry: $3(3)=9$, $3(1)=3$, $3(0)=0$, $3(2)=6$. Result: $[[9, 3], [0, 6]]$.</li>
+        <li><strong>Part C: Matrix Multiplication (03:06 - 03:41):</strong> Inner dimension check $(2 \times 2)(2 \times 2) \to 2 \times 2$. Animated row-column dot products:
+          <ul>
+            <li>$C_{11} = (3 \cdot 1) + (1 \cdot 4) = 7$</li>
+            <li>$C_{12} = (3 \cdot 2) + (1 \cdot 5) = 11$</li>
+            <li>$C_{21} = (0 \cdot 1) + (2 \cdot 4) = 8$</li>
+            <li>$C_{22} = (0 \cdot 2) + (2 \cdot 5) = 10$</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="formula-box">
+        C_ij = Σ_{r=1}^k a_{ir} · b_{rj}  (Inner Product Rule)
+      </div>
+    </div>
+    <div class="scene-col">
+      <h4>Narration Script (Word-for-Word)</h4>
+      <div class="script-text">
+        "Now let us master the core algebraic operations step-by-step. First: Matrix Addition. You can only add matrices of the exact same dimensions. If the sizes match, addition is component-wise: three plus one gives four; one plus two gives three; zero plus four gives four; and two plus five gives seven. Geometrically, this represents combining two vector fields across space. Second: Scalar Multiplication. When you multiply a matrix by a scalar like three, every entry scales by that number. Three times three is nine, three times one is three, three times zero is zero, and three times two is six. Geometrically, this dilates space uniformly. Third and most famous: Matrix Multiplication. To multiply matrix A by matrix B, the number of columns in A must equal the number of rows in B. The inner dimensions must match! Each entry in the product is computed by the dot product of a row from the left matrix with a column from the right matrix. For entry one one: three times one plus one times four equals seven. For entry one two: three times two plus one times five equals eleven. For entry two one: zero times one plus two times four equals eight. And for entry two two: zero times two plus two times five equals ten. All intermediate arithmetic follows strict, verifiable logic."
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scene 5 -->
+<div class="scene-card">
+  <div class="scene-header">
+    <span class="scene-title">Scene 5: Geometric Interpretation — Composition & Non-Commutativity</span>
+    <span class="scene-duration">Duration: 03:41 - 04:28 (47.1s)</span>
+  </div>
+  <div class="scene-body">
+    <div class="scene-col">
+      <h4>Visual & Motion Graphics Plan</h4>
+      <ul>
+        <li>Composition Equation: $T_{BA}(\mathbf{x}) = B(A(\mathbf{x})) = (BA)\mathbf{x}$.</li>
+        <li>Side-by-side comparison:
+          <ul>
+            <li>Left: $AB = [[7, 11], [8, 10]]$ (Apply $B$ first, then $A$)</li>
+            <li>Right: $BA = [[3, 5], [12, 14]]$ (Apply $A$ first, then $B$)</li>
+          </ul>
+        </li>
+        <li>Glowing coral alert: "Order Matters! Matrix Multiplication is Non-Commutative: $AB \neq BA$."</li>
+        <li>Physical analogy: 90° rotation followed by horizontal shear gives a completely different orientation than shearing first and rotating second.</li>
+      </ul>
+      <div class="formula-box">
+        AB ≠ BA (Non-Commutative);  Area Scaling Factor = |det(M)|
+      </div>
+    </div>
+    <div class="scene-col">
+      <h4>Narration Script (Word-for-Word)</h4>
+      <div class="script-text">
+        "Why is matrix multiplication defined through this row-column rule rather than simply multiplying matching entries? Because matrix multiplication represents the composition of linear transformations! Multiplying B times A means applying transformation A first, and then applying transformation B to the result. This immediately reveals why matrix multiplication is generally non-commutative: A times B does not equal B times A! If you rotate space ninety degrees and then shear it horizontally, you arrive at a completely different final shape than if you shear first and rotate second. The order of transformations changes reality! Furthermore, the determinant of the matrix measures how the area of any region scales under the transformation. Algebra and geometry are two perspectives of the exact same truth."
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scene 6 -->
+<div class="scene-card">
+  <div class="scene-header">
+    <span class="scene-title">Scene 6: Summary, Takeaways & Official Credits Frame</span>
+    <span class="scene-duration">Duration: 04:28 - 05:15 (43.4s)</span>
+  </div>
+  <div class="scene-body">
+    <div class="scene-col">
+      <h4>Visual & Motion Graphics Plan</h4>
+      <ul>
+        <li>Three animated takeaway cards cascade onto screen:
+          <ul>
+            <li><strong>1. Dual Nature:</strong> Data table + geometric space transformer.</li>
+            <li><strong>2. Strict Dimension Constraints:</strong> Identical for addition; inner match for multiplication.</li>
+            <li><strong>3. Multiplication is Composition:</strong> Sequential operations; $AB \neq BA$.</li>
+          </ul>
+        </li>
+        <li>Official closing submission frame with student name, ID, course title, academic references, audio credits, and AI disclosure statement.</li>
+      </ul>
+    </div>
+    <div class="scene-col">
+      <h4>Narration Script (Word-for-Word)</h4>
+      <div class="script-text">
+        "To summarize our journey, remember these three core principles: First, a matrix is both a structured data container and an engine of linear transformation. Its columns tell you exactly where the standard basis vectors land. Second, operations respect geometry: addition shifts vector spaces component-wise, scalar multiplication dilates space, and matrix multiplication composes transformations through row-by-column dot products. And third, order matters: matrix multiplication is non-commutative because transforming space is order-dependent. With these visual foundations, you are now ready to conquer higher-dimensional transformations, eigenvalues, and multivariable calculus. Thank you for watching!"
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-stamp">
+  Linear Algebra & Calculus (M3) • Internal Assessment Project • Student: Ipsit Debnath (ID: E25B071258, BTech CSE AI & ML) • Submitted 25th November
+</div>
+
+</body>
+</html>

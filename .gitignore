@@ -1,0 +1,18 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Temporary Audio files (can be regenerated with _Code/generate_audio.py)
+assets/audio/*.wav
+*.aiff
+*.tmp
